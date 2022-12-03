@@ -261,6 +261,7 @@ void parent_insert(NODE *leaf, NODE *new_leaf, int key)
 		parent->key[0] = temp->key[k +1];
 		parent->nkey++;
 	
+		parent_insert(Root, parent, A);
 	}
 }
 
